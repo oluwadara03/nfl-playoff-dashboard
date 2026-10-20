@@ -28,23 +28,5 @@ Made playoffs means a team appeared in any postseason game.
 
 Main folder structure:
 
-nfl_dashboard/
-├── app/
-│   └── dashboard.py
-├── data/
-│   ├── raw/
-│   └── processed/
-├── models/
-├── notebooks/
-├── src/
-│   ├── data_processor.py
-│   ├── model_trainer.py
-│   └── predictor.py
-├── tests/
-│    └── test_no_2026.py
-├── Dockerfile
-├── .dockerignore
-├── .gitignore
-├── requirements.txt
-├── run_pipeline.py
-└── README.md
+<img width="300" height="458" alt="image" src="https://github.com/user-attachments/assets/b9bbe315-a3ff-408c-b1f0-b13fa3eddb97" />
+
