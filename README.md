@@ -2,19 +2,20 @@ GitHub: https://github.com/oluwadara03/nfl-playoff-dashboard
 
 
 Run with Docker:
-docker build -t nfl-playoff-predictor . \
+docker build -t nfl-playoff-predictor .  
 
-docker run --rm -p 3000:3000 nfl-playoff-predictor \
+docker run --rm -p 3000:3000 nfl-playoff-predictor  
 
-Then open localhost link: http://localhost:3000
+Then open localhost link: http://localhost:3000  
 
 
 
 Run locally:
-pip install -r requirements.txt \
-streamlit run app/dashboard.py
+pip install -r requirements.txt  
 
-\
+streamlit run app/dashboard.py  
+
+
 
 How it works:
 * One row per team per season (features: win %, points for/against per game, point differential, made playoffs). 
