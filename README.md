@@ -16,9 +16,10 @@ streamlit run app/dashboard.py
 
 
 How it works:
-* One row per team per season (win %, points for/against per game, point differential, made playoffs). Made playoffs = appeared in any postseason game.
+* One row per team per season (features: win %, points for/against per game, point differential, made playoffs). 
+Made playoffs means a team appeared in any postseason game.
 * Training pairs: season N stats -> did the team make the playoffs in season N+1. 2023->2024 and 2024->2025 give 64 labelled rows. The 2026 prediction uses 2025 stats.
-* Chronological split: train 2023->2024 (4-fold CV tuning), test 2024->2025 (used once); the final model is refit on both pairs.
+* Chronological split: train 2023->2024, test 2024->2025 (was only used once); the final model is refit on both pairs.
 * Models: Logistic Regression (point differential only), Random Forest with monotonic constraints, and a naive repeat-last-year baseline. Projected wins: linear regression.
 
 
